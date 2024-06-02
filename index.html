@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <title>Ectaclick Portfolio</title>
+  <title>Quentin Barlet</title>
   <link rel="stylesheet" type="text/css" href="./public/assets/app.css">
 </head>
 
@@ -17,11 +17,6 @@
       <li>
         <button type="button">
           <a href="#about">A propos</a>
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          <a href="#formations">Formations</a>
         </button>
       </li>
       <li>
@@ -49,18 +44,13 @@
 
   <main id="home">
     <section id="about">
-      <h3>Salut</h2>
-        <h1>Je suis Quentin Barlet</h1>
-        <p>Etudiant à l'I.U.T de Villeneuve-d'Ascq.</p>
-        <p>Ayant commencé la programamtion fin collège j'ai su tôt vers quoi m'orienter, c'est pour cela que j'ai la
-          formation BUT (Bachelor Universitaire Technologique)</p>
-    </section>
-    <section id="formations">
-      <h1>Formations</h1>
-      <div class="separator">
-        <span class="separator_left"></span>
-        <span class="separator_right"></span>
-      </div>
+      <h3>Bienvenue sur mon site</h2>
+        <p>Je suis étudiant en <abbr title="Bachelor Universitaire de Technologie">BUT</abbr> informatique
+          dans le parcours Conception et Développement à l'<abbr
+            title="Institut Universitaire de Technologie">I.U.T</abbr> de Lille
+        </p>
+        <p>Durant am formation j'ai pu acquérir de nombreuses <a href="#skills">compétences</a> dans diffréents domaines
+          de l'informatique</p>
     </section>
 
     <section id="experiences">
@@ -68,6 +58,116 @@
       <div class="separator">
         <span class="separator_left"></span>
         <span class="separator_right"></span>
+      </div>
+      <div class="card company">
+        <header>
+          <div>
+            <h1><a href="https://misyl.net/">MISYL</a></h2>
+              <p>Villeneuve-d'Ascq</p>
+              <p>10 semaines</p>
+          </div>
+          <img src="assets/icon/company/misyl.png" alt="misyl company logo">
+        </header>
+
+        <div class="content">
+          <p>
+            Conception et réalisation d'un générateur de micro-service via des requêtes HTTP. Projet réalisé en
+            <a href="https://vuejs.org/">VueJS</a> et <a href="https://nestjs.com/">
+              NetsJS
+            </a>.
+          </p>
+          <p>Première version réalisé avce MongoDB seconde version avec Supabase.</p>
+        </div>
+
+        <footer>
+          <div class="technologies">
+            <a href="https://vuejs.org/">
+              <img src="assets/icon/tech/vuejs.svg" alt="vuejs logo">
+            </a>
+            <a href="https://nestjs.com/">
+              <img src="assets/icon/tech/nestjs.svg" alt="nestjs logo">
+            </a>
+          </div>
+        </footer>
+      </div>
+
+      <div class="card company">
+        <header>
+          <div>
+            <h1><a href="https://www.wavenet.be/fr/">WAVENET</a></h2>
+              <p>Villeneuve-d'Ascq</p>
+              <p>12 semaines</p>
+          </div>
+          <img src="assets/icon/company/wavenet.svg" alt="wavenet company logo">
+        </header>
+
+        <p class="content">
+          Développement d'un dans le but de mettre à jour des informations concernant l'environnement pour la région
+          Wallonne de la belgique.
+          <a href="https://angular.dev/">Angular</a> et <a href="https://spring.io/projects/spring-boot">
+            Springboot
+          </a>
+        </p>
+
+        <footer>
+          <div class="technologies">
+            <a href="https://angular.dev/">
+              <img src="assets/icon/tech/angular.svg" width="48px" alt="angular logo">
+            </a>
+            <a href="https://primeng.org/">
+              <img src="assets/icon/tech/primeng.png" width="48px" alt="primeng logo">
+            </a>
+            <a href="https://spring.io/projects/spring-boot">
+              <img src="assets/icon/tech/spring-boot.svg" alt="spring boot logo">
+            </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>Projets</h1>
+      <div class="separator">
+        <span class="separator_left"></span>
+        <span class="separator_right"></span>
+      </div>
+      <div class="content">
+
+        <div class="card project">
+          <header>
+            <img src="assets/projects/classification.png" alt="">
+            <h2>Classification</h2>
+          </header>
+          <div class="content">
+            <p>Projet de classification réalisé en <a href="">Java</a> à la librairie javafx. Elle est capable de
+              charger des
+              données au format CSV dans un graphique en permettant de les classifier en fonction de leurs critères
+              <abbr title="k-nearest neighbors algorithm">KNN</abbr>. Il
+              est ensuite possible de déterminer un de ces critères depuis un point créé manuellement.
+            </p>
+          </div>
+          <footer>
+            <a href="https://www.java.com/en/">
+              <img src="assets/icon/tech/java.svg" alt="java logo">
+            </a>
+          </footer>
+        </div>
+
+        <div class="card project">
+          <header>
+            <img src="assets/projects/netclics.png" alt="netclics image">
+            <h2>Faux Netflix</h2>
+          </header>
+          <div class="content">
+            <p>Reproduction du site de streaming Netflix en autonomie en <a href="https://react.dev/">React</a>
+            </p>
+          </div>
+          <footer>
+            <a href="https://react.dev/">
+              <img src="assets/icon/tech/react.svg" width="48px" alt="react logo">
+            </a>
+          </footer>
+        </div>
       </div>
     </section>
 
@@ -77,20 +177,57 @@
         <span class="separator_left"></span>
         <span class="separator_right"></span>
       </div>
-      <div class="skill">
-        <h2>Springboot</h2>
+      <div class="content">
+
+        <div class="card skill">
+          <h3>Springboot</h3>
+          <p>Apprentissage du framework <a href="https://spring.io/projects/spring-boot">SpringBoot</a>
+            ainsi que <abbr title="Java Persistence Api">JPA</abbr>
+            en
+            <a href="https://www.java.com/en/">Java</a>
+          </p>
+        </div>
+        <div class="card skill">
+          <h3>React</h3>
+          <p>Apprentissage de la librairie <a href="https://react.dev/">React</a>,
+            <a href="https://redux.js.org/">Redux</a>
+          </p>
+        </div>
+        <div class="card skill">
+          <h3>NO SQL</h3>
+          <p>Utilisation des bases de donnée <a href="https://www.mongodb.com/">MongoDB</a>, <a
+              href="https://redis.io/">Redis</a></p>
+        </div>
       </div>
-      <div class="skill">
-        <h2>React</h2>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="separator">
+        <span class="separator_left"></span>
+        <span class="separator_right"></span>
       </div>
-      <div class="skill">
-        <h2>NO SQL</h2>
-      </div>
+      <form>
+        <div>
+          <label for="first_name">Prénom</label>
+          <input id="first_name" type="text" name="firstName" placeholder="Prénom">
+        </div>
+        <div>
+          <label for="last_name">Nom</label>
+          <input id="last_name" type="text" name="lastName" placeholder="Nom">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="name" placeholder="Email">
+        </div>
+
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>Réalisé par Quentin Barlet en HTML et SASS (CSS)</p>
+    <a href="https://fr.linkedin.com › in › quentin-barlet">Linkedin</a>
+    <a href="https://gitlab.com/ectaclick">Gitlab</a>
   </footer>
 </body>
 

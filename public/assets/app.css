@@ -11,8 +11,13 @@
   padding: 0;
 }
 
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 4px #1f2226, -5px -5px 4px #292c32;
+}
+
 a {
-  color: white;
+  color: #7585FF;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -28,17 +33,20 @@ button {
   padding: 1rem;
   box-shadow: 5px 5px 4px #1f2226, -5px -5px 4px #292c32;
 }
-button:clicked {
-  box-shadow: inset 5px 5px 16px #1c1e22, inset -5px -5px 16px #2c3036;
-}
 
 #nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+#nav li {
+  margin: 1rem;
+}
 #nav li:not(:last-child) {
   margin-right: 3rem;
+}
+#nav li a {
+  color: white;
 }
 
 body {
@@ -48,12 +56,12 @@ body {
   color: white;
 }
 
-header {
-  padding: 2rem;
+main > header {
+  padding: 1rem;
 }
 
 main > section {
-  width: min(500px, 100%);
+  width: min(800px, 100%);
   margin: 4rem auto;
 }
 main > section:not(:last-child) {
@@ -64,18 +72,15 @@ main > section:not(#about):nth-child(odd) > h1 {
   text-align: right;
 }
 
-footer {
-  text-align: center;
-}
-
 #about {
-  width: min(500px, 100%);
+  width: min(800px, 100%);
   margin-inline: auto;
   text-align: center;
 }
 
 .separator {
   position: relative;
+  padding: 2rem 0;
 }
 .separator > .separator_left {
   display: inline-block;
@@ -91,6 +96,101 @@ footer {
   position: absolute;
   right: 0;
   background-color: #f7a21e;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+}
+.company header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.company header h1 a {
+  font-size: 2rem;
+}
+.company header img,
+.company header svg {
+  max-width: 200px;
+  height: auto;
+}
+.company .content {
+  padding: 0 1rem;
+}
+.company footer {
+  padding: 2rem 0;
+}
+.company footer .technologies {
+  display: flex;
+  justify-content: space-around;
+}
+
+#experiences p.content {
+  padding: 1rem;
+}
+#experiences div.company:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+#skills .content .skill {
+  padding: 1rem;
+}
+#skills .content .skill:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+#projects .content {
+  display: flex;
+  justify-content: space-around;
+}
+#projects .project {
+  border-radius: 1rem;
+  max-width: 400px;
+}
+#projects .project h2 {
+  text-align: center;
+}
+#projects .project .content {
+  padding: 1rem;
+}
+#projects .project:not(:last-child) {
+  margin-right: 1rem;
+}
+#projects .project > header > img {
+  height: 300px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 1rem 1rem 0 0;
+}
+
+input {
+  color: white;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 10px;
+  background: #24272c;
+  box-shadow: inset 5px 5px 5px #1b1d21, inset -5px -5px 5px #2d3137;
+}
+
+button[type=submit] {
+  color: white;
+}
+
+#contact form {
+  text-align: center;
+}
+#contact form > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+footer a:not(:last-child) {
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=app.css.map */

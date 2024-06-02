@@ -11,9 +11,10 @@
   padding: 0;
 }
 
+@import "card";
+
 a {
-  //color: #babbbd;
-  color: white;
+  color: #7585FF;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -28,14 +29,8 @@ button {
   background-color: #24272c;
   padding: 1rem;
 
-  //box-shadow: 1px 1px 2px #1c1c1c, -1px -1px 2px grey;
   box-shadow: 5px 5px 4px #1f2226,
     -5px -5px 4px #292c32;
-
-  &:clicked {
-    box-shadow: inset 5px 5px 16px #1c1e22,
-      inset -5px -5px 16px #2c3036;
-  }
 }
 
 #nav {
@@ -43,8 +38,16 @@ button {
   flex-wrap: wrap;
   justify-content: center;
 
+  li {
+    margin: 1rem;
+  }
+
   li:not(:last-child) {
     margin-right: 3rem;
+  }
+
+  li a {
+    color: white;
   }
 }
 
@@ -55,12 +58,12 @@ body {
   color: white;
 }
 
-header {
-  padding: 2rem;
+main>header {
+  padding: 1rem;
 }
 
 main>section {
-  width: min(500px, 100%);
+  width: min(800px, 100%);
   margin: 4rem auto;
 
   &:not(:last-child) {
@@ -73,18 +76,15 @@ main>section:not(#about):nth-child(odd)>h1 {
   text-align: right;
 }
 
-footer {
-  text-align: center;
-}
-
 #about {
-  width: min(500px, 100%);
+  width: min(800px, 100%);
   margin-inline: auto;
   text-align: center;
 }
 
 .separator {
   position: relative;
+  padding: 2rem 0;
 
   &>.separator_left {
     display: inline-block;
@@ -101,5 +101,132 @@ footer {
     position: absolute;
     right: 0;
     background-color: #f7a21e;
+  }
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    h1 a {
+      font-size: 2rem;
+    }
+
+    img,
+    svg {
+      max-width: 200px;
+      height: auto;
+    }
+
+  }
+
+  .content {
+    padding: 0 1rem;
+  }
+
+  footer {
+    padding: 2rem 0;
+
+    .technologies {
+      display: flex;
+      justify-content: space-around;
+
+    }
+  }
+}
+
+#experiences {
+
+  p.content {
+    padding: 1rem;
+  }
+
+  div.company:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+#skills {
+  .content {
+    .skill {
+      padding: 1rem;
+    }
+
+    .skill:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+#projects {
+  .content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .project {
+    border-radius: 1rem;
+    max-width: 400px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .content {
+      padding: 1rem;
+    }
+  }
+
+  .project:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+
+  .project>header {
+    &>img {
+      height: 300px;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+}
+
+input {
+  color: white;
+  border: none;
+  padding: .4rem;
+  border-radius: 10px;
+  background: #24272c;
+  box-shadow: inset 5px 5px 5px #1b1d21,
+    inset -5px -5px 5px #2d3137;
+}
+
+button[type="submit"] {
+  color: white;
+}
+
+#contact {
+  form {
+    text-align: center;
+  }
+
+  form>div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+
+  a:not(:last-child) {
+    margin-right: 2rem
   }
 }
