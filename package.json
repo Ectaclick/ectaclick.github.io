@@ -1,0 +1,22 @@
+{
+  "name": "ectaclick_portfolio",
+  "version": "1.0.0",
+  "description": "Ectaclick's portfolio",
+  "repository": {
+    "url": "git+https://github.com/Ectaclick/ectaclick.github.io.git",
+    "type": "git"
+  },
+  "author": "ectaclick <ectaclick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ectaclick/ectaclick.github.io/issues"
+  },
+  "homepage": "https://github.com/Ectaclick/ectaclick.github.io#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sass": "^1.77.4"
+  }
+}
